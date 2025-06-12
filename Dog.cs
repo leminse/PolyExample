@@ -6,12 +6,16 @@ using System.Threading.Tasks;
 
 namespace PolyExample
 {
-    internal class Dog : Animal
+    class Dog : Animal
     {
-        public Dog()
+        public void TestB()
         {
-
+            Protected();                    //상속된 자식에서는 protected 접근 가능
+            Public();
         }
+
+        public string Color { get; set; }
+
         public void Bark() { Console.WriteLine("왈왈 짓습니다."); }
 
     }
