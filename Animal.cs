@@ -6,12 +6,14 @@ using System.Threading.Tasks;
 
 namespace PolyExample
 {
-    class Cat : Animal
+    internal class Animal
     {
-        public Cat()
+        public Animal() 
         {
 
         }
-        public void Mocw() { Console.WriteLine("냥냥 웁니다."); }
+
+        public void Eat() { Console.WriteLine(); }
+        public void Sleep() { Console.WriteLine(); }
     }
 }
